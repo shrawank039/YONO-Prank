@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">YONO SBI</string>
+    <string name="login_description">Using Internet Banking username &amp; password or MPIN.</string>
+    <string name="viewbalance_description">View account balance and recent transactions.</string>
+    <string name="quickpay_description">Payments are now Quick and Simple.</string>
+</resources>
