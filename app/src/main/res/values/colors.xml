@@ -9,9 +9,11 @@
     <color name="dark_gray">#454545</color>
     <color name="light_gray">#9E9E9E</color>
     <color name="light_gray1">#EFEFEF</color>
+    <color name="light_gray2">#D3D3D3</color>
     <color name="gray">#656565</color>
     <color name="white">#FFFFFFFF</color>
     <color name="app">#8E0D5E</color>
     <color name="app_light">#B91955</color>
     <color name="app_dark">#5D0269</color>
+    <color name="purple_light">#AF0871</color>
 </resources>

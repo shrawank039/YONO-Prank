@@ -10,12 +10,14 @@ import android.widget.EditText;
 public class EditActivity extends AppCompatActivity {
 
     EditText userName, amount, account;
+    PrefManager prf;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit);
 
+        prf = new PrefManager(this);
         userName = findViewById(R.id.et_username);
         amount = findViewById(R.id.et_amount);
         account = findViewById(R.id.et_account);
@@ -31,9 +33,9 @@ public class EditActivity extends AppCompatActivity {
         } else if (TextUtils.isEmpty(account.getText())){
             account.setError("No Data");
         } else {
-            Global.name = "Hi, " + userName.getText().toString();
-            Global.amount = "₹"+ amount.getText().toString();
-            Global.account = "XXXXXXX"+ account.getText().toString();
+            prf.setString(Global.name,"Hi, " + userName.getText().toString());
+            prf.setString(Global.amount, "₹"+ amount.getText().toString());
+            prf.setString(Global.account, "A/c No. XXXXXXX"+ account.getText().toString());
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
                 finish();
         }
